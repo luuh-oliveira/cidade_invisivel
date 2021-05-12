@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,22 +6,51 @@
 
 body{
     width: 100vw;
-    height: 10vh;
-    background-image: url("img/cidade-invisivel.png");
+    height: 100vh;
+    background-color: #00000066;
+    background-image: url(img/cidade-invisivel.png);
     background-size: cover;
     background-position: right top;
     display: flex;
     flex-direction: column;
+    font-family: 'Karla', sans-serif;
 }
 
 header{
-    background-color: #000000AA;
     height: 70px;
+    background-color: #000000AA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.logo img{
+    width: 120px;
+    user-select: none;
+}
+
+.links ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 1s;
+}
+
+.links a:hover{
+    color: red;
 }
 
 main{
-    flex-grow: 1;
+    flex-grow: 6;
 }
 footer{
-    height: 40px;
+    height: 30px;
 }
