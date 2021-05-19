@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-position: right top;
+    background-image: url(img/curupira.png);
+    background-size: cover;
+    color: white;
+}
+
+header{
+    height: 70px;
+    background-color: #000000AA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img{
+    width: 120px;
+    user-select: none;
+}
+
+.links ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 1s;
+}
+
+.links a:hover{
+    color: red;
+}
+
+main{
+    padding: 25vh 10vw;
+    flex-grow: 5;
+}
+
+main h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 90px;
+}
+
+.vertical {
+    margin-left: -85px;
+    position: absolute;
+     width: 215px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); /* Safari/Chrome */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -o-transform: rotate(-90deg); /* Opera */
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    color: rgb(190, 28, 28);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    user-select: none;
+}
+
+main p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 300px;
+    margin-left: 70px;
+}
+
+.lista1{
+    margin-top: 20px;
+    display: flex;
+    gap: 90px;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+.lista2{
+    display: flex;
+    gap: 150px;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+td{
+    border-right: 1px solid red;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+footer{
+    text-align: center;
+    height: 20px;
+}
