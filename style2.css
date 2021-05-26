@@ -47,14 +47,27 @@ header{
 }
 
 main{
-    padding: 25vh 10vw;
-    flex-grow: 5;
+    padding: 10vh 10vw;
+    flex-grow: 1;
 }
 
 main h1{
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 90px;
+    font-size: 100px;
+    position: relative;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
 }
+
+main h1::after{
+    content: "Curupira";
+    -webkit-text-stroke: 2px #00000066;
+    color: transparent;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: -1;
+
+} 
 
 .vertical {
     margin-left: -85px;
@@ -76,37 +89,53 @@ main p{
     font-style: italic;
     font-size: 20px;
     font-weight: 200;
+    
+}
+
+.texto{
     max-width: 300px;
     margin-left: 70px;
 }
 
-.lista1{
+.nomes{
     margin-top: 20px;
+}
+
+.nomeAtor{
     display: flex;
-    gap: 90px;
-    list-style-type: none;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    border-right: solid 3px rgb(223, 33, 33);
+    margin-right: 35px;
+    width: 150px;
     font-style: italic;
 }
 
-.lista2{
-    display: flex;
-    gap: 150px;
-    list-style-type: none;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    text-align: center;
+.ator{
+    font-size: 10px;
 }
-td{
-    border-right: 1px solid red;
-    padding-right: 20px;
-    padding-left: 20px;
+
+.nomePersonagem{
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px rgb(223, 33, 33);
+    margin-right: 35px;
+    width: 150px;
+    font-style: italic;
+}
+
+.personagem{
+    font-size: 10px;
+}
+
+.nomeEntidade{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-style: italic;
+}
+
+.entidade{
+    font-size: 10px;
 }
 
 footer{
