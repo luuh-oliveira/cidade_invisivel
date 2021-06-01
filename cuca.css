@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     background-position: right top;
-    background-image: url(img/curupira.png);
+    background-image: url(img/cuca.jpg);
     background-size: cover;
     color: white;
 }
@@ -63,7 +63,7 @@ main h1{
 }
 
 main h1::after{
-    content: "Curupira";
+    content: "Cuca";
     -webkit-text-stroke: 2px #00000066;
     color: transparent;
     position: absolute;
@@ -99,6 +99,7 @@ main p{
 .texto{
     max-width: 300px;
     margin-left: 70px;
+    margin-top: 20px;
 }
 
 .nomes{
@@ -113,7 +114,7 @@ main p{
     border-right: solid 3px rgb(190, 28, 28);
     margin-right: 35px;
     width: 150px;
-    font-style: italic;
+    font-style: italic;    
 }
 
 .ator{
