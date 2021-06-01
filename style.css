@@ -32,7 +32,7 @@ header{
     user-select: none;
 }
 
-.links ul{
+.links {
     display: flex;
     gap: 20px;
     list-style-type: none;
@@ -53,6 +53,15 @@ span{
 
 .links a:hover{
     color: red;
+}
+
+ul{
+    display: none;
+    text-decoration: none;
+}
+
+.lendas:hover{
+    display: block;
 }
 
 main{
