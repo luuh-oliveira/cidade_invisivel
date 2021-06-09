@@ -61,14 +61,18 @@ span{
     flex-direction: column;
 }
 
-
 ul{
+    display: none;
+}
+
+.submenu:hover ul{
     display:flex;
-    margin-top: 25px;
+    margin-top: 23px;
     gap: 5px;
     position:absolute;
     flex-direction: column;
     text-decoration: none;
+    border-left: 5px solid black;
     list-style: none;
     background-color: #000000a1;
 }

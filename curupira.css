@@ -27,7 +27,7 @@ header{
     user-select: none;
 }
 
-.links ul{
+.links {
     display: flex;
     gap: 20px;
     list-style-type: none;
@@ -49,6 +49,29 @@ span{
 .links a:hover{
     color: red;
 }
+
+.links li:hover{
+    display: flex;
+    border-left: 5px solid red;
+    flex-direction: column;
+}
+
+ul{
+    display: none;
+}
+
+.submenu:hover ul{
+    display:flex;
+    margin-top: 23px;
+    gap: 5px;
+    position:absolute;
+    flex-direction: column;
+    text-decoration: none;
+    border-left: 5px solid black;
+    list-style: none;
+    background-color: #000000a1;
+}
+
 
 main{
     padding: 10vh 10vw;
